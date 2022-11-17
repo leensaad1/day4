@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        //Q1
+        int [] number = {50,60,40,10,38,65,87,56,90,100,66,80,88,40,98};
+        for ( int num : number ) {
+            if ( num >= 90 && num <= 100 )
+                System.out.println("A " + num);
+                else if ( num >= 80 && num < 90 )
+                    System.out.println("B " + num);
+                    else if ( num >= 70 && num < 80 )
+                        System.out.println("C " + num);
+                        else if ( num >= 60 && num < 70 )
+                            System.out.println("D " + num);
+                            else
+                                System.out.println("F " + num);
+        }//for
+
+        System.out.println() ;
+        //Q2
+        String [] name = {"Shaza","Mohamed","Asmaa","Anfal","Yousra","Amin","Radwa","Yasmeen"} ;
+        for (int i = 0; i <= name.length-1; i++) {
+            if ( name[i].startsWith("A"))
+                System.out.println(name[i]);
+        }//for
+
+        System.out.println() ;
+        //Q3
+        int [] numbers = {50,60,40,10,38,65,87,56,90,100,66,80,88,40,98} ; 
+
+        for ( int nums : numbers ) {
+            if ( nums > 50 )
+                System.out.println(nums);
+        }//for
+
+
+        System.out.println();
+        //Q4
+        Scanner input = new Scanner(System.in);
+        System.out.println("please enter number: ");
+        int check = input.nextInt();
+        for ( int chec : numbers ) {
+            if ( check == chec )
+                System.out.println(check);
+
+        }//for
+
+
+
+    }//main
+}//class
